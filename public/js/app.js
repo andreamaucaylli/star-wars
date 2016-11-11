@@ -68,8 +68,8 @@ var mostrarOpciones = function (response) {
 
 $(document).ready( function () {
 
-	$.getJSON("http://swapi.co/api/people/", mostrarPersonajes);
-	$.getJSON("http://swapi.co/api/species/", mostrarOpciones);
+	$.getJSON("https://swapi.co/api/people/", mostrarPersonajes);
+	$.getJSON("https://swapi.co/api/species/", mostrarOpciones);
 
 	$("#next").click( function (e) {
 		e.preventDefault();
@@ -90,8 +90,9 @@ $(document).ready( function () {
 
 	$(".container").on("change", "#species", function(e) {
 		var url = $(this).val().split("/"); /*con esto tengo mi array*/
+		$("#resultsSearch").html("");
 		for (var i = 0; i < url.length; i++) {
-			$.getJSON("http://swapi.co/api/people/" + url[i] + "/", function (response) {
+			$.getJSON("https://swapi.co/api/people/" + url[i] + "/", function (response) {
 				var characterSpecies = templateSpecies.replace("{{name}}", response.name);
 				$("#resultsSearch").append(characterSpecies);
 			});

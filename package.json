@@ -9,7 +9,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/dopamint25/star-wars-searcher.git"
+    "url": "https://github.com/dopamint25/star-wars.git"
   },
   "keywords": [
     "star",
@@ -24,9 +24,9 @@
   "author": "Andrea Maucaylli",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/dopamint25/star-wars-searcher/issues"
+    "url": "https://github.com/dopamint25/star-wars/issues"
   },
-  "homepage": "https://github.com/dopamint25/star-wars-searcher#readme",
+  "homepage": "https://github.com/dopamint25/star-wars#readme",
   "dependencies": {
     "express": "^4.14.0"
   }
