@@ -35,9 +35,19 @@ var mostrarPersonajes = function (response) {
 		.replace("{{name}}", personaje.name)
 		.replace("{{url}}", personaje.url);
 	});
+
+	var next = response.next;
+	var previous = response.previous;
+	if(next != null) {
+		next.replace("http", "https");
+	}
+	if(previous != null) {
+		previous.replace("http", "https");
+	}	
+
 	$("#people").html(personajes);
-	$("#next").attr("data-url", response.next);
-	$("#previous").attr("data-url", response.previous);
+	$("#next").attr("data-url", next);
+	$("#previous").attr("data-url", previous);
 
 	if (!response.next) {
 		$("#next").fadeOut();
