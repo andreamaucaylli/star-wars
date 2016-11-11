@@ -3,9 +3,7 @@
 }
 .bg {
 	background: url(../img/bg-sw.jpg) no-repeat;
-	background-size: cover;
-	min-height: 100vh;
-	min-width: 100vw;
+	background-size: 100% 100vh;
 }
 .bg-black{
 	background: black;
@@ -14,7 +12,13 @@
 	width: 10%;
 	height: 10%;
 }
-.total {
-	background-color: ;
-	color: ;
+.cont{
+	width: 100%;
+	position: absolute;
+	bottom: 18%;
+	text-align: center;
+}
+.boton{
+	display: inline-block;
+	margin: 2%;
 }
