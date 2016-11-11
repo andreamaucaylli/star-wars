@@ -1,0 +1,33 @@
+{
+  "name": "swapi",
+  "version": "1.0.0",
+  "description": "web app using star wars api",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/dopamint25/star-wars-searcher.git"
+  },
+  "keywords": [
+    "star",
+    "wars",
+    "api",
+    "AJAX",
+    "JSON",
+    "JS",
+    "web",
+    "app"
+  ],
+  "author": "Andrea Maucaylli",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/dopamint25/star-wars-searcher/issues"
+  },
+  "homepage": "https://github.com/dopamint25/star-wars-searcher#readme",
+  "dependencies": {
+    "express": "^4.14.0"
+  }
+}
